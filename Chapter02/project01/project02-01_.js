@@ -26,7 +26,7 @@ document.getElementById("cValue").onchange = function()
 {
  let cDegree = Number(this.value);
 
- document.getElementById("fValue").value = CelesiusToFahrenheit(cDegree);
+ document.getElementById("fValue").value = CelsiusToFahrenheit(cDegree);
 }
 
 document.getElementById("fValue").onchange = function()
