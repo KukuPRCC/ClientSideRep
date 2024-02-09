@@ -18,13 +18,13 @@ function verifyForm()
       let phone = document.getElementById("phone").value;
 
       if (name && email && phone)
-      {
+      
        window.alert("Thank you!");
-      }
+      
       else 
-      {
+      
        window.alert("Please fill in all fields")
-      }
+      
 
 }
 
