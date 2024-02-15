@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Project</title>
+    <script src="otherThings.js" defer></script>
 </head>
 <body>
 
@@ -38,8 +39,10 @@
     </main>
 
      <h1> Call In / Donut Order </h1>
-
-
+     <label for="quanity"> How many donuts would you like?</label>
+     <input type="number" id="quanity" min="0" placeholder="Enter quantity"><br> 
+     <button onclick ="calculateTotal()">Calculate Total </button>
+     <p id="total"></p>
 
 
     <!-- Use the footer area to add webpage footer content -->
