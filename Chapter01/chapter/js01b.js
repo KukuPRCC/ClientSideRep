@@ -36,3 +36,6 @@ let captionText = "<p>Plant choices for " +
                   " 5a - 6b </p>";
 
 document.getElementById("imgCaption").innerHTML = captionText;
+
+
+///im trying to update it
