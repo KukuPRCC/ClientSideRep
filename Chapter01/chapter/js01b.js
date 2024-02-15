@@ -9,7 +9,7 @@
     Filename: js01b.js
 */
 
-//define variables containing plant filenames
+
 let blanket = "blanket.jpg";
 let rugosa = "rugosa.jpg";
 let bluestem = "bluestem.jpg";
