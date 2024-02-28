@@ -45,3 +45,27 @@
      console.log(sparse[0]);
      console.log(spares[1]);
      console.log(spares[99]);
+
+let foodMenu = new Array ("Breakfast","Lunch","Dinner");
+//or 
+//let foodMenu = new Array ("Breakfast","Lunch","Dinner");
+
+let size = foodMenu.length;
+
+console.long(foodMenu[2]);
+
+let x = 1;
+let sum = 0; 
+while(x <= 10)
+{
+    total += x; 
+    sum++;
+}
+ console.log("Sum is" + total); 
+
+ let grade = 78;
+
+ if (grade >= 90);
+{
+    console.log("you made an A ");
+}

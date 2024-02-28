@@ -80,7 +80,7 @@ function showgames()
     gameInfo += "</p>";
 
     let tableCell = doctument.ElementsById(gameDates[i]);
-    tableCell
+    tableCell.insertAdjacentHTML("beforeEnd",gameInfo)
 
 
     }
