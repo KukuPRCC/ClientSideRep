@@ -10,7 +10,7 @@
 */
 
 // Maximum Length of Review
-const MAX_REVIEW = 100;
+const MAX_REVIEW = 1000;
 document.getElementById("limit").innerHTML = MAX_REVIEW;
 
 // Reference to elemets in the web page
@@ -24,13 +24,26 @@ document.getElementById("comment").addEventListener(keyup, updateCount);
 // Function to update the count with each keyup event
 function updateCount() {
    // Set the warning box to an empty text string 
-   warningBox.innerHTML = "";
+   try {
+      // if the char count is greater than the value of the MAX_REVIEW constant then throw an exception
+      if (charCount > MAX_COUNT) {
+        throw 'You have exceeded the character count limit.'
+      }
+    } catch (error) {
+    
+      warningBox.innerHTML = error 
+    } finally {
+    
+      wordCountBox.innerHTML = charCount
+    }
+  }
+  
    
    // Count the number of characters in the comment box
    commentText = document.getElementById("comment").value;
-   charCount = countCharacters(commentsText);
+   charCount = commentText.length;
    
-}
+
 
 
 
