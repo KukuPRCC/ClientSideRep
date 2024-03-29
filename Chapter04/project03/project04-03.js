@@ -14,12 +14,12 @@ const MAX_REVIEW = 1000;
 document.getElementById("limit").innerHTML = MAX_REVIEW;
 
 // Reference to elemets in the web page
-wordCountBox = document.getElementById("countValue");
-warningBox = document.getElementById("warningBox");
+const wordCountBox = document.getElementById("countValue");
+const warningBox = document.getElementById("warningBox");
 
 
 // Event listener for typing into the comment box
-document.getElementById("comment").addEventListener(keyup, updateCount);
+document.getElementById("comment").addEventListener('keyup', updateCount);
 
 // Function to update the count with each keyup event
 function updateCount() {
